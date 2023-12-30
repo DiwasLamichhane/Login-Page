@@ -1,4 +1,4 @@
-/* Google Fonts  */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 /* CSS boilerplate */
@@ -11,69 +11,56 @@
 html,body{
     height: 100%;
     width: 100%;
+    background-color: #D2E3C8;
+    display: grid;
+    place-items: center;
 }
 
-/* Styling CSS from here  */
-body{
-    background-color: rgb(229, 225, 225);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#login-form{
-    max-width: 330px;
-    width: 100%;
+/* Styling CSS from here */
+#main{
+    width: 360px;
     background-color: white;
-    box-shadow: 0 5px 10px rgb(116, 110, 110);
-    border-radius: 10px;
-    padding: 20px;
-    position: absolute;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgb(120, 120, 120);
 }
-#login-form::before{
-    content: '';
-    background-color: coral;
-    height: 20%;
+#main .title{
+    line-height: 100px;
+    background-color: #86A789;
+    font-size: 30px;
+    font-weight: 600;
+    color: #def8cf;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+#main form{
+    padding: 10px 30px 50px 30px;
+}
+#main form .interface{
+    height: 50px;
     width: 100%;
+    margin-top: 20px;
     position: relative;
 }
-#login-form .heading{
-    display: flex;
-    justify-content: center;
-    font-size: 28px;
+#main form .interface input{
+    height: 100%;
+    width: 100%;
     font-weight: 600;
-    background-color: coral;
-    height: 30%;
+    padding-left: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    outline: none;
 }
-#login-form .input-boxes{
-    margin-top: 33px;
+#main form .interface label{
+    position: absolute;
+    top: 28%;
+    left: 15px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 17px;
 }
-#login-form .input-boxes i{
-    font-size: 20px;
-}
-.input-boxes input{
-    border: none;
-    padding: 6px;
-}
-.input-boxes .box1{
-    margin-bottom: 5px;
-    border: 2px solid coral;
-}
-.input-boxes .box2{
-    border: 2px solid coral;
-}
-#login-form .options{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    margin-top: 4px;
-}
-.options .forgot{
-    cursor: pointer;
-}
-#login-form .button{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    
+#main form .interface input:focus ~ label{
+ top: -23%; 
+ font-size: 16px;
+ color: #86A789;
+ background-color: white;
 }
