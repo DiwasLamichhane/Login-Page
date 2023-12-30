@@ -19,15 +19,15 @@ html,body{
 /* Styling CSS from here */
 #main{
     width: 360px;
-    background-color: white;
+    background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 5px 10px rgb(120, 120, 120);
 }
 #main .title{
     line-height: 100px;
-    background-color: #86A789;
+    background: #097879;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 500;
     color: #ffffff;
     text-align: center;
     border-radius: 15px 15px 0 0;
@@ -54,7 +54,7 @@ html,body{
 #main form .interface input:focus,
 #main form .interface input:valid
 {
-    border-color: #86A789;
+    border-color: #176B87;
 }
 #main form .interface label{
     position: absolute;
@@ -69,30 +69,39 @@ html,body{
 #main form .interface input:valid ~ label{
  top: -23%; 
  font-size: 16px;
- color: #86A789;
+ color: #176B87;
  background-color: white;
 }
 #main form .passforgot{
-    color: #86A789;
-    display: flex;
-    justify-content: right;
-    margin: 5px; 
+    margin: 10px 0px 0px 7px; 
 }
 #main form .passforgot a{
-    color: rgb(162, 161, 161);
+    color: #176B87;
+    text-decoration: none;
 }
 #main form .interface input[type="submit"]{
     color: #ffffff;
-    background-color: #86A789;
+    background: #097879;
     font-size: 15px;
     cursor: pointer;
     transition: all 0.3 ease;
     border-radius: 30px;
+    font-weight: 500;
+    border: none;
 }
 #main form .interface input[type="submit"]:active{
     transform: scale(0.95);
 }
 #main form .signup, #main form .signup a{
-    color: rgb(162, 161, 161);
+    color: #176B87;
     margin: 7px;
+    font-size: 16px;
+}
+#main .cpright{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin: 0 0 8px 0;
+    color: #176B87;
+    font-weight: 400;
 }
