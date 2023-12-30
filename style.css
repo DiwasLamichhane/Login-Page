@@ -11,7 +11,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    background-color: #D2E3C8;
+    background-color: #EEF5FF;
     display: grid;
     place-items: center;
 }
@@ -28,7 +28,7 @@ html,body{
     background-color: #86A789;
     font-size: 30px;
     font-weight: 600;
-    color: #def8cf;
+    color: #ffffff;
     text-align: center;
     border-radius: 15px 15px 0 0;
 }
@@ -45,10 +45,16 @@ html,body{
     height: 100%;
     width: 100%;
     font-weight: 600;
+    font-size: 15px;
     padding-left: 15px;
     border: 1px solid lightgrey;
     border-radius: 15px;
     outline: none;
+}
+#main form .interface input:focus,
+#main form .interface input:valid
+{
+    border-color: #86A789;
 }
 #main form .interface label{
     position: absolute;
@@ -57,10 +63,36 @@ html,body{
     pointer-events: none;
     transition: all 0.3s ease;
     font-size: 17px;
+    color: rgb(162, 161, 161);
 }
-#main form .interface input:focus ~ label{
+#main form .interface input:focus ~ label,
+#main form .interface input:valid ~ label{
  top: -23%; 
  font-size: 16px;
  color: #86A789;
  background-color: white;
+}
+#main form .passforgot{
+    color: #86A789;
+    display: flex;
+    justify-content: right;
+    margin: 5px; 
+}
+#main form .passforgot a{
+    color: rgb(162, 161, 161);
+}
+#main form .interface input[type="submit"]{
+    color: #ffffff;
+    background-color: #86A789;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    border-radius: 30px;
+}
+#main form .interface input[type="submit"]:active{
+    transform: scale(0.95);
+}
+#main form .signup, #main form .signup a{
+    color: rgb(162, 161, 161);
+    margin: 7px;
 }
